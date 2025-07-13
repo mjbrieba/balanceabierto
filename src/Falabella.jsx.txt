@@ -1,0 +1,31 @@
+export default function Falabella() {
+  return (
+    <div className="max-w-4xl mx-auto p-6">
+      <h1 className="text-3xl font-bold mb-2">Falabella S.A.</h1>
+      <p className="text-gray-600 mb-4">RUT: 90.749.000-8</p>
+
+      <div className="bg-white shadow rounded-xl p-4">
+        <h2 className="text-xl font-semibold mb-2">Estado Financiero - Marzo 2025</h2>
+        <p className="text-gray-700 mb-4">Formato disponible: PDF y XBRL</p>
+
+        <div className="space-x-4">
+          <a
+            href="/docs/falabella/Estados_financieros_(PDF)90749000_202503.pdf"
+            className="bg-blue-900 text-white px-4 py-2 rounded hover:bg-blue-800"
+            target="_blank" rel="noopener noreferrer"
+          >
+            📄 Ver PDF
+          </a>
+
+          <a
+            href="/docs/falabella/Estados_financieros_(XBRL)90749000_202503.zip"
+            className="bg-gray-800 text-white px-4 py-2 rounded hover:bg-gray-700"
+            download
+          >
+            🧾 Descargar XBRL
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
